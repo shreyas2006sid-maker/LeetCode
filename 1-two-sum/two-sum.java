@@ -4,7 +4,7 @@ class Solution {
      for(int i=0;i<arr.length;i++){
         int comp=target-arr[i];
         if(map.containsKey(comp)){
-            return new int[]{map.get(comp),i};
+            return new int[]{i,map.get(comp)};
         }
         map.put(arr[i],i);
      }
